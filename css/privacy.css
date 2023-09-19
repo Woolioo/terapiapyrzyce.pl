@@ -1,0 +1,97 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.9);
+  border-radius: 100px;
+  margin-block: -0.5em;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #606362;
+  border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #32a87d;
+  border-radius: 100px;
+}
+
+html {
+  background-color: #f5f5f5;
+}
+
+.underline {
+  width: 100px;
+  height: 4px;
+  background-color: #32a87d;
+  margin: 0 auto;
+}
+
+main {
+  background-color: #f5f5f5;
+}
+main .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .container .policy-text h1 {
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .container .policy-text p {
+  font-size: 20px;
+}
+main .container .policy-text a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #32a87d;
+  transition: 0.6s;
+}
+main .container .policy-text a:hover {
+  color: #38f5b0;
+  font-size: 21px;
+}
+main .container .btn {
+  font-size: 25px;
+  padding: 10px;
+  margin: 10px;
+}
+
+footer {
+  background-color: white;
+  font-size: 18px;
+}
+footer .woolio {
+  text-decoration: none;
+  color: #32a87d;
+  transition: 0.6s;
+}
+footer a:hover {
+  color: #38f5b0;
+  font-size: 19px;
+}
+footer .policy a {
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000000;
+  transition: 0.3s;
+}
+footer .policy a:hover {
+  color: #38f5b0;
+}/*# sourceMappingURL=privacy.css.map */

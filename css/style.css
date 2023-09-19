@@ -1,0 +1,514 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes banner {
+  0% {
+    background-image: url(../img/hero-big.jpg);
+  }
+  25% {
+    background-image: url(../img/hero-big.jpg);
+  }
+  26% {
+    background-image: url(../img/hero-big2.jpg);
+  }
+  50% {
+    background-image: url(../img/hero-big2.jpg);
+  }
+  51% {
+    background-image: url(../img/hero-big3.jpg);
+  }
+  75% {
+    background-image: url(../img/hero-big3.jpg);
+  }
+  76% {
+    background-image: url(../img/hero-big4.jpg);
+  }
+  100% {
+    background-image: url(../img/hero-big4.jpg);
+  }
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.9);
+  border-radius: 100px;
+  margin-block: -0.5em;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #606362;
+  border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #32a87d;
+  border-radius: 100px;
+}
+
+html {
+  scroll-padding-top: 82px;
+}
+
+body {
+  position: relative;
+  font-family: "Oxygen", sans-serif;
+  background-color: #eee;
+  font-size: 1rem;
+}
+
+.shadow-bg {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+  margin-top: 2px;
+  font-size: 30px;
+  font-weight: 600;
+  text-shadow: 3px 4px 4px rgba(60, 57, 63, 0.15);
+}
+
+.underline {
+  width: 70px;
+  height: 4px;
+  background-color: #32a87d;
+  margin: 0 auto;
+}
+
+nav {
+  text-transform: uppercase;
+  font-size: 19px;
+  transition: 0.6s;
+  z-index: 2;
+}
+nav .navbar-toggler {
+  padding: 10px 15px;
+}
+nav .navbar-brand {
+  font-weight: bold;
+  font-size: 24px;
+  transition: 0.6s;
+}
+nav .navbar-brand img {
+  max-width: 50px;
+  max-height: 50px;
+}
+nav .navbar-brand:hover {
+  color: #32a87d;
+}
+nav .nav-link,
+nav .navbar-nav .nav-link.show,
+nav .navbar-brand,
+nav .fa-bars {
+  color: white;
+}
+nav .nav-link:focus,
+nav .nav-link:hover,
+nav .navbar-nav .nav-link.active,
+nav .navbar-nav .nav-link.show {
+  color: #32a87d;
+}
+nav img {
+  position: relative;
+  top: -4px;
+  right: 10px;
+}
+nav .navbar-brand {
+  font-family: "Tilt Prism", cursive;
+}
+nav .navbar-toggler {
+  border: none;
+}
+
+header .banner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #f5f5f5;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.1 ease-in-out;
+  background-image: url(../img/hero-small.jpg);
+  animation: banner 28s infinite linear;
+}
+header .banner .banner-content {
+  width: 100%;
+  height: 100%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+header .banner .banner-content P {
+  text-align: center;
+  font-size: 20px;
+  font-style: italic;
+  padding: 5px;
+}
+header .banner .banner-content P span {
+  text-transform: uppercase;
+  font-weight: bold;
+  background-image: linear-gradient(to left, #32a87d, #38f5b0);
+  color: transparent;
+  background-clip: text;
+  font-style: normal;
+  -webkit-background-clip: text;
+  text-shadow: 4px 6px 4px rgba(179, 147, 211, 0.2);
+}
+header .banner .banner-content a {
+  margin-top: 30px;
+  font-size: 25px;
+}
+
+.aboutme {
+  padding-top: 30px;
+}
+.aboutme .container .abt-img {
+  padding: 10px;
+  margin: 10px;
+}
+.aboutme .container .abt-img img {
+  width: 260px;
+  height: 400px;
+}
+.aboutme .container .abt-text p {
+  font-size: 16px;
+}
+.aboutme .container .abt-text p a {
+  text-decoration: none;
+  color: #32a87d;
+  font-weight: bold;
+  transition: 0.6s;
+}
+.aboutme .container .abt-text p a:hover {
+  color: #38f5b0;
+}
+
+.therapy .container .therapy-text h2 {
+  margin: 10px;
+  padding: 10px;
+  font-weight: bold;
+}
+.therapy .container .therapy-text p {
+  padding: 10px;
+  font-size: 20px;
+}
+.therapy .container .therapy-text ul {
+  font-size: 20px;
+}
+.therapy .container .therapy-text span {
+  font-weight: bold;
+  color: #32a87d;
+}
+
+.trauma .container .trauma-text h2 {
+  margin: 10px;
+  padding: 10px;
+  font-weight: bold;
+}
+.trauma .container .trauma-text p {
+  padding: 10px;
+  font-size: 20px;
+}
+.trauma .container .trauma-text ul {
+  margin-top: -25px;
+  font-size: 20px;
+}
+
+.gabinet .container .gabinet-text h2 {
+  margin: 20px 10px 10px 10px;
+  padding: 10px;
+  font-weight: bold;
+}
+.gabinet .container .gabinet-text ul {
+  padding: 20px;
+  font-size: 22px;
+}
+.gabinet .container .gabinet-text p {
+  text-align: center;
+  font-size: 20px;
+}
+.gabinet .container .gabinet-text p a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #32a87d;
+  transition: 0.6s;
+}
+.gabinet .container .gabinet-text p a:hover {
+  color: #38f5b0;
+  font-size: 21px;
+}
+
+.pricing .price-box {
+  margin: 20px 10px;
+  padding: 30px;
+  background-color: #fff;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s;
+  height: 403px;
+}
+.pricing .price-box h3 {
+  color: #32a87d;
+  text-transform: uppercase;
+}
+.pricing .price-box span {
+  font-weight: bold;
+}
+.pricing .price-box i {
+  font-size: 24px;
+  padding: 0 5px;
+}
+.pricing .price-box button {
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+.pricing .price-box .price-tag {
+  font-size: 30px;
+  font-weight: bold;
+}
+.pricing .price-box:hover {
+  transform: scale(1.05);
+}
+.pricing .price-info {
+  margin-top: 30px;
+  padding: 10px;
+  font-size: 20px;
+}
+.pricing .price-info a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #32a87d;
+  transition: 0.6s;
+}
+.pricing .price-info a:hover {
+  color: #38f5b0;
+  font-size: 21px;
+}
+
+.contact .contactMe {
+  font-size: 18px;
+}
+.contact .contactMe h3 {
+  margin-top: 40px;
+  font-weight: bold;
+}
+.contact .contactMe a {
+  text-decoration: none;
+  color: #32a87d;
+  transition: 0.6s;
+}
+.contact .contactMe a:hover {
+  color: #38f5b0;
+}
+
+footer {
+  background-color: white;
+  font-size: 14px;
+  margin-top: -10px;
+}
+footer .woolio {
+  text-decoration: none;
+  color: #32a87d;
+  transition: 0.6s;
+}
+footer a:hover {
+  color: #38f5b0;
+  font-size: 19px;
+}
+footer .policy a {
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000000;
+  transition: 0.3s;
+}
+footer .policy a:hover {
+  color: #38f5b0;
+}
+
+.cookieContainer {
+  width: 100%;
+  margin: auto;
+  height: 8%;
+  padding-top: 7px;
+}
+
+.subcontainer {
+  width: 85%;
+  margin: auto;
+}
+
+#cookies {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+  display: none;
+}
+
+.cookies {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.cookies a {
+  color: #32a87d;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.cookies a:hover {
+  color: #38f5b0;
+}
+
+#cookiesBtn {
+  position: relative;
+  bottom: 5px;
+  border-radius: 5px;
+  padding: 8px 12px;
+  font-family: inherit;
+  cursor: pointer;
+  border: 1px solid white;
+  background-color: #fff;
+  font-weight: bold;
+  display: block;
+  margin: 0 auto;
+  font-size: 10px;
+  transition: 0.5s;
+}
+
+#cookiesBtn:hover {
+  background-color: rgba(245, 245, 245, 0.911);
+}
+
+@media (min-width: 320px) {
+  nav .navbar-brand {
+    font-size: 18px;
+  }
+}
+@media (min-width: 375px) {
+  .aboutme .container .abt-img img {
+    width: 311px;
+    height: 450px;
+  }
+}
+@media (min-width: 390px) {
+  .aboutme .container .abt-img img {
+    width: 326px;
+    height: 475px;
+  }
+}
+@media (min-width: 414px) {
+  .aboutme .container .abt-img img {
+    width: 350px;
+    height: 495px;
+  }
+}
+@media (min-width: 768px) {
+  header .banner .banner-content p {
+    font-size: 36px;
+  }
+  nav .navbar-brand {
+    font-size: 28px;
+  }
+  nav .navbar-brand img {
+    max-width: 70px;
+    max-height: 70px;
+  }
+  .heading {
+    font-size: 50px;
+  }
+  .underline {
+    width: 100px;
+  }
+  .aboutme .container .abt-img img {
+    width: 350px;
+    height: 495px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+  }
+  footer {
+    font-size: 18px;
+    margin-top: 0px;
+  }
+  footer .woolio {
+    text-decoration: none;
+    color: #32a87d;
+    transition: 0.6s;
+  }
+  footer a:hover {
+    color: #38f5b0;
+    font-size: 19px;
+  }
+  footer .policy a {
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000000;
+    transition: 0.3s;
+  }
+  footer .policy a:hover {
+    color: #38f5b0;
+  }
+}
+@media (min-width: 804px) {
+  .aboutme {
+    padding-top: 30px;
+  }
+  .aboutme .container .abt-img img {
+    width: 350px;
+    height: 495px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+  }
+}
+@media (min-width: 893px) {
+  .aboutme {
+    padding-top: 30px;
+  }
+  .aboutme .container .abt-img {
+    float: left;
+    padding: 10px;
+    margin: 10px;
+  }
+  .aboutme .container .abt-img img {
+    width: 450px;
+    height: 650px;
+  }
+  .aboutme .container .abt-text {
+    padding: 10px;
+    margin: 10px;
+  }
+  .aboutme .container .abt-text p {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  html {
+    scroll-padding: 69px;
+  }
+  header .banner .banner-content p {
+    font-size: 36px;
+  }
+  nav .navbar-brand {
+    font-size: 24px;
+  }
+}/*# sourceMappingURL=style.css.map */

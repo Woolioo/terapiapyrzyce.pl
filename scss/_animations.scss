@@ -1,0 +1,29 @@
+@keyframes banner {
+	0% {
+		background-image: url(../img/hero-big.jpg);
+	}
+	25% {
+        background-image: url(../img/hero-big.jpg);
+    }
+
+	26% {
+        background-image: url(../img/hero-big2.jpg);
+	}
+
+	50% {
+        background-image: url(../img/hero-big2.jpg);
+	}
+    
+    51% {
+        background-image: url(../img/hero-big3.jpg);
+    }
+    75% {
+        background-image: url(../img/hero-big3.jpg);
+    }
+    76% {
+        background-image: url(../img/hero-big4.jpg);
+    }
+    100% {
+        background-image: url(../img/hero-big4.jpg);
+    }
+}
